@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Reyna</title>
+      <link rel="icon" href="agent main images/reyna.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+      <style>
+         body{
+            margin:0;
+            background-image: url("backgrounds/reyna\ main\ background.jpg"); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+         }
+         
+         p{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+         }
+         .agent-pic img{
+            object-position: top;
+         }
+
+         /* .top-row
+         {
+            background-color: black;
+            height: 110px;
+            position:sticky;
+            top: 0;
+            right: 0;
+            left: 0;
+         } */
+
+         .main-body{
+            margin-top :40px;
+            margin-left:  20px;
+            margin-right: 20px;
+            display: flex;
+            flex-direction: row;
+            min-height: 100%;
+         }
+
+         .agents{
+           
+            flex: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            color: white;
+            margin-right: 20px;
+         }
+
+         .agent-viper , .agent-yoru , .agent-reyna ,.agent-chamber , .agent-clove, .back
+         {
+            text-align: center;
+            padding: 50px;
+            font-size: xx-large;
+            font-style: italic;
+            transition: 1s;
+            background-image: url("backgrounds/viper\ backgroun.jpg");
+            background-size: cover;
+            filter: grayscale();
+            background-repeat: no-repeat;
+            border-radius: 5%;
+         }
+
+         .agent-yoru{
+            background-image: url("backgrounds/background\ yoru.jpg");
+            background-size: cover;
+         }
+
+         .agent-reyna{
+            background-image: url("backgrounds/background-reyna.webp");
+            background-size: cover;
+         }
+         .agent-viper:hover{
+            filter: none;
+            color: #c806f9d0;
+         }
+
+         .agent-yoru:hover{
+            filter: none;
+            color: #FF4F00;
+         }
+
+         .agent-reyna{
+            filter: none;
+            color: yellow;
+         }
+
+         .agent-chamber{
+            background-image: url("backgrounds/background\ chamber.webp");
+         }
+
+
+         .agent-chamber:hover{
+            filter: none;
+            color: #A4A35B;
+         }
+
+         .agent-clove:hover{
+            filter: none;
+            color: #5CFF00;
+         }
+
+         .agent-clove{
+            background-image: url("backgrounds/background\ clove.avif");
+         }
+
+
+
+         .info{
+            flex: 4;
+            border: 2px solid transparent;
+         }
+
+
+         .disp
+         {
+            margin: 10px;
+            color: white;
+            font-size: large;
+         }
+
+
+         .agent-pic{
+            flex:2;
+           
+         }
+
+         .agent-pic img{
+            width: 100%;
+            height: 100%;
+            object-fit:contain;
+         }
+
+         .back{
+            background-image: none;
+            background-color: black;
+            color: white;
+            font-weight: normal;
+            text-decoration: none;
+         }
+
+         .back:hover{
+            opacity: 80%;
+         }
+
+         .ability-box{
+            display: flex;
+           
+            flex-direction: column;
+            column-gap: 10px;
+         }
+
+         .ability{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            row-gap: 5px ;
+         }
+
+         .ability-pic{
+            
+            height: 150px;
+         }
+         
+         .ability-pic img{
+            object-fit:cover;
+            width: 100%;
+            height: 100%;
+         }
+
+         hr{
+            width: 150px;
+            margin-left: 10px;
+         }
+      </style>
+   </head>
+
+
+
+
+   <body>
+      <div class="top-row">
+         
+      </div>
+   
+      <div class="main-body">
+         <div class="agents">
+            <!-- VIPER -->
+            <a href="viper.html"
+               style="text-decoration: none;">
+               <Div class="agent-viper">VIPER</Div>
+            </a>
+            <!-- YORU -->
+            <a href="yoru.html"
+                style="text-decoration: none;">
+               <Div class="agent-yoru">
+               YORU
+            </Div>
+            </a>
+            <!-- REYNA -->
+               <Div class="agent-reyna">REYNA</Div>
+            
+            <!-- CHAMBER -->
+            <a href="chamber.html"
+             style="text-decoration: none;">
+              <Div class="agent-chamber">CHAMBER</Div>
+            </a>
+
+            <!-- CLOVE -->
+            <a href="clove.html"
+               style="text-decoration: none;">
+               <div class="agent-clove">CLOVE</div>
+            </a>
+
+            <a href="index.html">
+               <div class="back">
+                  main screen?
+               </div>
+            </a>
+
+
+         </div>
+
+
+         <div class="info">
+
+            <div style="
+               color: white;
+               text-decoration-thickness: 10px;
+               font-size: xx-large;
+               font-style: italic;
+               font-weight:900;
+               margin-left: 10px;
+               margin-top:10px
+               ">
+               REYNA
+               <span style="display: block;
+               font-size: medium;
+               color: blue;"> 
+                  Duelist
+               </span>
+            </div>
+
+            <div class="disp">
+               <p>Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance.</p> 
+            </div>
+               <br>
+               <br>
+            <div class="abilities">
+               <b style="font-size: x-large; margin-left: 40px;
+               color: white;">Abilities</b>
+               <hr>
+               <div class="ability-box">
+
+
+
+
+                  <div class="ability">
+
+
+                      <!--ability 1-->
+
+                     <div class="ability-name">
+                        <p style="font-size: large; margin-left: 30px;
+                        color: white;
+                        text-decoration: underline;
+                        "> Q - DEVOUR </p>
+                        <p style="color: white;
+                        padding: 10px;">Enemies killed by Reyna leave behind Soul Orbs that last 3 seconds. INSTANTLY consume a nearby soul orb, rapidly healing for a short duration. Health gained through this skill exceeding 100 will decay over time. If EMPRESS is active, this skill will automatically cast and not consume the orb.
+                        </p>
+
+                     </div>
+                     <div class="ability-pic">
+                           <img src="agent abilities/reyna/devour.png" alt="devour">
+                     </div>
+
+                     <!-- ability 2 -->
+                     <div class="ability-name">
+                        <p style="font-size: large; margin-left: 30px;
+                        color: white;
+                        text-decoration: underline;
+                        margin-top: 30px;
+                        "> E - DISMISS </p>
+                        <p style="color: white;
+                        padding: 10px;">
+                        INSTANTLY consume a nearby soul orb, becoming intangible for a short duration. If EMPRESS is active, also become invisible.
+
+                        </p>
+
+                     </div>
+                     <div class="ability-pic">
+                           <img src="agent abilities/reyna/dismiss.png" alt="devour">
+                     </div>
+
+                     <!-- ability 3 -->
+                     <div class="ability-name">
+                        <p style="font-size: large; margin-left: 30px;
+                        color: white;
+                        text-decoration: underline;
+                        margin-top: 30px;
+                        "> C - LEER</p>
+                        <p style="color: white;
+                        padding: 10px;">
+                        EQUIP an ethereal destructible eye. ACTIVATE to cast the eye a short distance forward. The eye will Nearsight all enemies who look at it.
+                        </p>
+
+                     </div>
+                     <div class="ability-pic">
+                           <img src="agent abilities/reyna/leer.png" alt="devour">
+                     </div>
+
+                     <!-- ability 4 -->
+                     <div class="ability-name">
+                        <p style="font-size: large; margin-left: 30px;
+                        color: white;
+                        text-decoration: underline;
+                        margin-top: 30px;
+                        "> X - EMPRESS</p>
+                        <p style="color: white;
+                        padding: 10px;">
+                        INSTANTLY enter a frenzy, increasing firing speed, equip and reload speed dramatically. Scoring a kill renews the duration.
+                        </p>
+
+                     </div>
+                     <div class="ability-pic"
+                     style="margin-top: 10px;">
+                           <img src="agent abilities/reyna/empress.png" alt="devour">
+                     </div>
+                  </div>   
+               </div>
+            </div>
+         </div>
+
+         <div class="agent-pic">
+            <img src="agent main images/reyna.png" alt=" reyna main img">
+         </div>
+      </div>
+
+      
+   </body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Viper</title>
+      <link rel="icon" href="agent main images/viper-main.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+      <style>
+         body{
+            margin:0;
+             background-image: url("backgrounds/viper\ main\ background.jpg"); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+         }
+         
+         p{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+         }
+         .agent-pic img{
+            object-position: top;
+         }
+
+         /* .top-row
+         {
+            background-color: black;
+            height: 110px;
+            position:sticky;
+            top: 0;
+            right: 0;
+            left: 0;
+         } */
+
+         .main-body{
+            margin-top :40px;
+            margin-left:  20px;
+            margin-right: 20px;
+            display: flex;
+            flex-direction: row;
+            min-height: 100%;
+         }
+
+         .agents{
+           
+            flex: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            color: white;
+            margin-right: 20px;
+         }
+
+         .agent-viper , .agent-yoru , .agent-reyna ,.agent-chamber , .agent-clove, .back
+         {
+            text-align: center;
+            padding: 50px;
+            font-size: xx-large;
+            font-style: italic;
+            transition: 1s;
+            background-image: url("backgrounds/viper\ backgroun.jpg");
+            background-size: cover;
+            filter: grayscale();
+            background-repeat: no-repeat;
+            border-radius: 5%;
+         }
+
+         .agent-yoru{
+            background-image: url("backgrounds/background\ yoru.jpg");
+            background-size: cover;
+         }
+
+         .agent-reyna{
+            background-image: url("backgrounds/background-reyna.webp");
+            background-size: cover;
+         }
+         .agent-viper{
+            filter: none;
+            color: #c806f9d0;
+         }
+
+         .agent-yoru:hover{
+            filter: none;
+            color: #FF4F00;
+         }
+
+         .agent-reyna:hover{
+            filter: none;
+            color: yellow;
+         }
+
+         .agent-chamber{
+            background-image: url("backgrounds/background\ chamber.webp");
+         }
+
+
+         .agent-chamber:hover{
+            filter: none;
+            color: #A4A35B;
+         }
+
+         .agent-clove:hover{
+            filter: none;
+            color: #5CFF00;
+         }
+
+         .agent-clove{
+            background-image: url("backgrounds/background\ clove.avif");
+         }
+
+
+
+         .info{
+            flex: 4;
+            border: 2px solid transparent;
+         }
+
+
+         .disp
+         {
+            margin: 10px;
+            color: white;
+            font-size: large;
+         }
+
+
+         .agent-pic{
+            flex:2;
+           
+         }
+
+         .agent-pic img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+         }
+
+         .back{
+            background-image: none;
+            background-color: black;
+            color: white;
+            font-weight: normal;
+            text-decoration: none;
+         }
+
+         .back:hover{
+            opacity: 80%;
+         }
+
+         .ability-box{
+            display: flex;
+           
+            flex-direction: column;
+            column-gap: 10px;
+         }
+
+         .ability{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            row-gap: 5px ;
+         }
+
+         .ability-pic{
+            
+            height: 150px;
+         }
+         
+         .ability-pic img{
+            object-fit:cover;
+            width: 100%;
+            height: 100%;
+         }
+
+         hr{
+            width: 150px;
+            margin-left: 10px;
+         }
+      </style>
+   </head>
+
+
+
+
+   <body>
+      <div class="top-row">
+         
+      </div>
+   
+      <div class="main-body">
+         <div class="agents">
+            <!-- VIPER -->
+               <Div class="agent-viper">VIPER</Div>
+
+            <!-- YORU -->
+            <a href="yoru.html"
+               style="text-decoration: none;">
+               <Div class="agent-yoru">
+               YORU
+            </Div>
+            </a>
+            <!-- REYNA -->
+            <a href="reyna.html"
+               style="text-decoration: none;">
+               <Div class="agent-reyna">REYNA</Div>
+            </a>
+            <!-- CHAMBER -->
+            <a href="chamber.html"
+               style="text-decoration: none;">
+              <Div class="agent-chamber">CHAMBER</Div>
+            </a>
+
+            <!-- CLOVE -->
+            <a href="clove.html"
+               style="text-decoration: none;">
+               <div class="agent-clove">CLOVE</div>
+            </a>
+
+            <a href="index.html">
+               <div class="back">
+                  main screen?
+               </div>
+            </a>
+
+         </div>
+
+
+         <div class="info">
+
+            <div style="
+               color: white;
+               text-decoration-thickness: 10px;
+               font-size: xx-large;
+               font-style: italic;
+               font-weight:900;
+               margin-left: 10px;
+               margin-top:10px
+               ">
+               VIPER
+               <span style="display: block;
+               font-size: medium;
+               color: green;"> 
+                  Controller
+               </span>
+            </div>
+
+            <div class="disp">
+               <p>The American Chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and choke the enemy's vision. If the toxins don't kill her prey, her mindgames surely will.</p>
+             </div>
+
+             <br>
+             <br>
+
+            <div class="abilities">
+               <b style="font-size: x-large; margin-left: 40px;
+               color: white;">Abilities</b>
+               <hr>
+               <div class="ability-box">
+
+
+
+
+                  <div class="ability">
+
+
+                      <!--ability 1-->
+
+                     <div class="ability-name">
+                        <p style="font-size: large; margin-left: 30px;
+                        color: white;
+                        text-decoration: underline;
+                        "> Q - POISON CLOUD </p>
+                        <p style="color: white;
+                        padding: 10px;">
+                           EQUIP a gas emitter. FIRE to throw the emitter that perpetually remains throughout the round. RE-USE the ability to create a toxic gas cloud at the cost of fuel. This ability can be RE-USED more than once and can be picked up to be REDEPLOYED.
+                        </p>
+
+                     </div>
+                     <div class="ability-pic">
+                           <img src="agent abilities/viper/poison-cloud.png" alt="devour">
+                     </div>
+
+                     <!-- ability 2 -->
+                     <div class="ability-name">
+                        <p style="font-size: large; margin-left: 30px;
+                        color: white;
+                        text-decoration: underline;
+                        margin-top: 30px;
+                        "> E - TOXIC SCREEN </p>
+                        <p style="color: white;
+                        padding: 10px;">
+                           EQUIP a gas emitter launcher. FIRE to deploy a long line of gas emitters. RE-USE the ability to create a tall wall of toxic gas at the cost of fuel. This ability can be RE-USED more than once.
+                        </p>
+
+                     </div>
+                     <div class="ability-pic"
+                     style="margin-top: 30px;">
+                           <img src="agent abilities/viper/toxic-screen.png" alt="devour">
+                     </div>
+
+                     <!-- ability 3 -->
+                     <div class="ability-name">
+                        <p style="font-size: large; margin-left: 30px;
+                        color: white;
+                        text-decoration: underline;
+                        margin-top: 30px;
+                        "> C - SNAKE BITE</p>
+                        <p style="color: white;
+                        padding: 10px;">
+                           EQUIP a chemical launcher. FIRE to launch a canister that shatters upon hitting the floor, creating a lingering chemical zone that damages and slows enemies.
+                        </p>
+
+                     </div>
+                     <div class="ability-pic"
+                     style="margin-top: 30px;">
+                           <img src="agent abilities/viper/snake-bite.png" alt="devour">
+                     </div>
+
+                     <!-- ability 4 -->
+                     <div class="ability-name">
+                        <p style="font-size: large; margin-left: 30px;
+                        color: white;
+                        text-decoration: underline;
+                        margin-top: 30px;
+                        "> X - VIPER’S PIT</p>
+                        <p style="color: white;
+                        padding: 10px;">
+                           EQUIP a chemical sprayer. FIRE to spray a chemical cloud in all directions around Viper, creating a large cloud that reduces the vision range and maximum health of players inside of it
+                        </p>
+
+                     </div>
+                     <div class="ability-pic"
+                     style="margin-top: 30px;">
+                           <img src="agent abilities/viper/vipers-pit.png" alt="devour">
+                     </div>
+                  </div>   
+               </div>
+            </div>
+         </div>
+
+         <div class="agent-pic">
+            <img src="agent main images/viper-main.png" alt=" viper main img">
+         </div>
+      </div>
+   </body>
+</html>
